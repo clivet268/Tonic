@@ -2,7 +2,7 @@ package com.Clivet268.Tonic.Items;
 
 import com.Clivet268.Tonic.Tonic;
 import com.Clivet268.Tonic.Util.IHasModel;
-import com.Clivet268.Tonic.Util.ItemInit;
+import com.Clivet268.Tonic.Util.RegistryHandler;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
@@ -43,7 +43,7 @@ public class TonicItem extends Item implements IHasModel
         this.setTonicMode(0);
         this.setVanillaEffect(null);
         this.setCreativeTab(CreativeTabs.BREWING);
-        ItemInit.ITEMS.add(this);
+        RegistryHandler.ITEMS.add(this);
     }
 
     public int getTonicMode() {
@@ -164,5 +164,6 @@ public class TonicItem extends Item implements IHasModel
     {
         Tonic.proxy.registerItemRenderer(this, 0, "inventory");
     }
+
 }
 
