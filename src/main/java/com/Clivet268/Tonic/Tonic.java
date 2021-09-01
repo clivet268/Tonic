@@ -1,6 +1,7 @@
 package com.Clivet268.Tonic;
 
 import com.Clivet268.Tonic.Proxy.CommonProxy;
+import com.Clivet268.Tonic.Util.RegistryHandler;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -28,12 +29,14 @@ public class Tonic
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+
         logger = event.getModLog();
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+
         // some example code
         logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
